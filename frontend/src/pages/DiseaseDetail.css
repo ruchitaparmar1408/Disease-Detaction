@@ -1,0 +1,97 @@
+.detail-loading,
+.detail-error {
+  padding: 2rem;
+  color: var(--text-muted);
+}
+
+.detail-error a {
+  margin-left: 0.5rem;
+}
+
+.detail-back {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.detail-back:hover {
+  color: var(--primary);
+}
+
+.disease-detail {
+  max-width: 800px;
+}
+
+.detail-hero {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 600px) {
+  .detail-hero {
+    grid-template-columns: 280px 1fr;
+  }
+}
+
+.detail-image-wrap {
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  aspect-ratio: 4/3;
+}
+
+.detail-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail-category {
+  display: inline-block;
+  text-transform: capitalize;
+  color: var(--primary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.detail-title {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.detail-overview {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.detail-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.detail-section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+
+.detail-section h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
+.detail-section p {
+  color: var(--text-muted);
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
