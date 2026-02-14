@@ -1,0 +1,11 @@
+# Render Blueprint - single web service for frontend + backend
+# https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: disease-detection-app
+    env: node
+    buildCommand: npm run build
+    startCommand: cd backend && node seed.js && node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production

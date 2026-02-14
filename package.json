@@ -1,0 +1,16 @@
+{
+  "name": "disease-detection-app",
+  "private": true,
+  "description": "Full-stack disease detection app - single deployment",
+  "scripts": {
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "build:frontend": "cd frontend && npm run build",
+    "build": "npm run install:backend && npm run install:frontend && npm run build:frontend",
+    "start": "cd backend && node server.js",
+    "seed": "cd backend && node seed.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
